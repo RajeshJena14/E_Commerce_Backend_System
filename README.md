@@ -446,7 +446,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9...
 
     **Request Body and Response:**
 
-    ![Architecture](pictures/Screenshot%202026-03-16%20232516.png)
+    ![Architecture](Pictures/Screenshot%202026-03-16%20232516.png)
 
     > 💡 Mandatory fields: Name, Email, Password. If Role is not provided, then the User is provided the role `CUSTOMER` by-default
 
@@ -474,7 +474,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9...
 
     **Response Body:**
 
-    ![Architecture](pictures/Screenshot%202026-03-16%20234213.png)
+    ![Architecture](Pictures/Screenshot%202026-03-16%20234213.png)
 
 <br>
 
@@ -486,7 +486,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9...
 
     **Response Body:**
 
-    ![Architecture](pictures/Screenshot%202026-03-16%20234549.png)
+    ![Architecture](Pictures/Screenshot%202026-03-16%20234549.png)
 
 <br>
 
@@ -498,7 +498,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9...
 
     **Request Body and Response:**
 
-    ![Architecture](pictures/Screenshot%202026-03-17%20000656.png)
+    ![Architecture](Pictures/Screenshot%202026-03-17%20000656.png)
 
 <br>
 
@@ -510,7 +510,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9...
 
     **Response Body:**
 
-    ![Architecture](pictures/Screenshot%202026-03-17%20000835.png)
+    ![Architecture](Pictures/Screenshot%202026-03-17%20000835.png)
 
 <br>
 
@@ -525,7 +525,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9...
 
     **Request Body and Response:**
 
-    ![Architecture](pictures/Screenshot%202026-03-17%20001710.png)
+    ![Architecture](Pictures/Screenshot%202026-03-17%20001710.png)
 
     > 💡 Mandatory fields: Name, Description, Price, Stock, Category
 
@@ -539,11 +539,11 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9...
 
     **Response Body:**
 
-    ![Architecture](pictures/Screenshot%202026-03-17%20001812.png)
+    ![Architecture](Pictures/Screenshot%202026-03-17%20001812.png)
 
     <br>
 
-    ![Architecture](pictures/Screenshot%202026-03-17%20001926.png)
+    ![Architecture](Pictures/Screenshot%202026-03-17%20001926.png)
 
     >💡 For Custom Pagination, pass custom values to the parameters
 
@@ -557,7 +557,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9...
 
     **Response Body:**
 
-    ![Architecture](pictures/Screenshot%202026-03-17%20002036.png)
+    ![Architecture](Pictures/Screenshot%202026-03-17%20002036.png)
 
     >💡 For Custom Pagination, pass custom values to the parameters
 
@@ -571,7 +571,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9...
 
     **Response Body:**
 
-    ![Architecture](pictures/Screenshot%202026-03-17%20005351.png)
+    ![Architecture](Pictures/Screenshot%202026-03-17%20005351.png)
 
 <br>
 
@@ -584,7 +584,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9...
 
     **Request Body and Response:**
 
-    ![Architecture](pictures/Screenshot%202026-03-17%20002357.png)
+    ![Architecture](Pictures/Screenshot%202026-03-17%20002357.png)
 
 <br>
 
@@ -596,7 +596,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9...
 
     **Response Body:**
 
-    ![Architecture](pictures/Screenshot%202026-03-17%20002501.png)
+    ![Architecture](Pictures/Screenshot%202026-03-17%20002501.png)
 
 <br>
 
@@ -611,7 +611,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9...
 
     **Response Body:**
 
-    ![Architecture](pictures/Screenshot%202026-03-17%20005702.png)
+    ![Architecture](Pictures/Screenshot%202026-03-17%20005702.png)
 
 <br>
 
@@ -623,7 +623,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9...
 
     **Response Body:**
 
-    ![Architecture](pictures/Screenshot%202026-03-17%20005722.png)
+    ![Architecture](Pictures/Screenshot%202026-03-17%20005722.png)
 
 <br>
 
@@ -635,7 +635,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9...
 
     **Response Body:**
 
-    ![Architecture](pictures/Screenshot%202026-03-17%20011416.png)
+    ![Architecture](Pictures/Screenshot%202026-03-17%20011416.png)
 
 <br>
 
@@ -647,7 +647,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9...
 
     **Response Body:**
 
-    ![Architecture](pictures/Screenshot%202026-03-17%20005926.png)
+    ![Architecture](Pictures/Screenshot%202026-03-17%20005926.png)
 
 <br>
 
@@ -660,7 +660,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9...
 
     **Response Body:**
 
-    ![Architecture](pictures/Screenshot%202026-03-17%20010043.png)
+    ![Architecture](Pictures/Screenshot%202026-03-17%20010043.png)
 
 <br>
 
@@ -675,7 +675,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9...
 
     **Response Body:**
 
-    ![Architecture](pictures/Screenshot%202026-03-17%20010241.png)
+    ![Architecture](Pictures/Screenshot%202026-03-17%20010241.png)
 
 <br>
 
@@ -687,7 +687,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9...
 
     **Response Body:**
 
-    ![Architecture](pictures/Screenshot%202026-03-17%20010440.png)
+    ![Architecture](Pictures/Screenshot%202026-03-17%20010440.png)
 
 <br>
 
@@ -699,7 +699,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9...
 
     **Response Body:**
 
-    ![Architecture](pictures/Screenshot%202026-03-17%20011705.png)
+    ![Architecture](Pictures/Screenshot%202026-03-17%20011705.png)
 
 <br>
 
@@ -711,7 +711,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9...
 
     **Response Body:**
 
-    ![Architecture](pictures/Screenshot%202026-03-17%20011749.png)
+    ![Architecture](Pictures/Screenshot%202026-03-17%20011749.png)
 
 <br>
 
@@ -724,7 +724,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9...
 
     **Response Body:**
 
-    ![Architecture](pictures/Screenshot%202026-03-17%20011931.png)
+    ![Architecture](Pictures/Screenshot%202026-03-17%20011931.png)
 
 <br>
 
