@@ -460,7 +460,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9...
 
     **Request Body and Response:**
 
-    ![Architecture](pictures/Screenshot%202026-03-16%20233338.png)
+    ![Architecture](Pictures/Screenshot%202026-03-16%20233338.png)
 
     >💡 Mandatory fields: Name, Password
 
