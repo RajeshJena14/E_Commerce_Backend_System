@@ -1,0 +1,806 @@
+2026-03-15T21:55:06.565+05:30  INFO 7232 --- [E_Commerce_Backend_System] [main] c.i.E.ECommerceBackendSystemApplication  : Starting ECommerceBackendSystemApplication using Java 21.0.9 with PID 7232 (D:\JAVA-PROGRAMMING\ProductionJava\E_Commerce_Backend_System\target\classes started by rkjra in D:\JAVA-PROGRAMMING\ProductionJava\E_Commerce_Backend_System)
+2026-03-15T21:55:06.574+05:30  INFO 7232 --- [E_Commerce_Backend_System] [main] c.i.E.ECommerceBackendSystemApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-03-15T21:55:08.045+05:30  INFO 7232 --- [E_Commerce_Backend_System] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-15T21:55:08.187+05:30  INFO 7232 --- [E_Commerce_Backend_System] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 120 ms. Found 6 JPA repository interfaces.
+2026-03-15T21:55:09.190+05:30  INFO 7232 --- [E_Commerce_Backend_System] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-03-15T21:55:09.216+05:30  INFO 7232 --- [E_Commerce_Backend_System] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-15T21:55:09.216+05:30  INFO 7232 --- [E_Commerce_Backend_System] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-15T21:55:09.320+05:30  INFO 7232 --- [E_Commerce_Backend_System] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2625 ms
+2026-03-15T21:55:09.589+05:30  INFO 7232 --- [E_Commerce_Backend_System] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-15T21:55:09.747+05:30  INFO 7232 --- [E_Commerce_Backend_System] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-03-15T21:55:10.671+05:30  INFO 7232 --- [E_Commerce_Backend_System] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-15T21:55:10.742+05:30  INFO 7232 --- [E_Commerce_Backend_System] [main] com.zaxxer.hikari.HikariDataSource       : ECommerceBackendSystemApplication - Starting...
+2026-03-15T21:55:11.597+05:30  INFO 7232 --- [E_Commerce_Backend_System] [main] com.zaxxer.hikari.pool.HikariPool        : ECommerceBackendSystemApplication - Added connection com.mysql.cj.jdbc.ConnectionImpl@21bf308
+2026-03-15T21:55:11.601+05:30  INFO 7232 --- [E_Commerce_Backend_System] [main] com.zaxxer.hikari.HikariDataSource       : ECommerceBackendSystemApplication - Start completed.
+2026-03-15T21:55:11.886+05:30  WARN 7232 --- [E_Commerce_Backend_System] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-15T21:55:11.941+05:30  INFO 7232 --- [E_Commerce_Backend_System] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/inctureECommerceDatabase]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.34
+	Default catalog/schema: inctureECommerceDatabase/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-15T21:55:14.118+05:30  INFO 7232 --- [E_Commerce_Backend_System] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-15T21:55:14.323+05:30  INFO 7232 --- [E_Commerce_Backend_System] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-15T21:55:14.462+05:30  INFO 7232 --- [E_Commerce_Backend_System] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-03-15T21:55:16.257+05:30  INFO 7232 --- [E_Commerce_Backend_System] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-03-15T21:55:16.258+05:30  WARN 7232 --- [E_Commerce_Backend_System] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-03-15T21:55:16.368+05:30  WARN 7232 --- [E_Commerce_Backend_System] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-15T21:55:17.583+05:30  INFO 7232 --- [E_Commerce_Backend_System] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-03-15T21:55:17.594+05:30  INFO 7232 --- [E_Commerce_Backend_System] [main] c.i.E.ECommerceBackendSystemApplication  : Started ECommerceBackendSystemApplication in 11.907 seconds (process running for 13.416)
+2026-03-15T21:56:46.049+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-15T21:56:46.050+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-15T21:56:46.057+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2026-03-15T21:58:42.480+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-6] c.i.E.controller.UserController          : Received request to register a new user.
+2026-03-15T21:58:42.581+05:30 ERROR 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-6] c.i.E.controller.UserController          : Registration failed: Name cannot be empty.
+2026-03-15T21:59:00.885+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-8] c.i.E.controller.UserController          : Received request to register a new user.
+2026-03-15T21:59:00.888+05:30 ERROR 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-8] c.i.E.controller.UserController          : Registration failed: Email cannot be empty.
+2026-03-15T21:59:17.598+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-10] c.i.E.controller.UserController          : Received request to register a new user.
+2026-03-15T21:59:17.600+05:30 ERROR 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-10] c.i.E.controller.UserController          : Registration failed: Password cannot be empty.
+2026-03-15T22:00:06.059+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-3] c.i.E.controller.UserController          : Received request to register a new user.
+2026-03-15T22:00:07.468+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-3] c.i.E.service.UserService                : Attempting to save new user 'Abhisek' to the database.
+2026-03-15T22:00:08.694+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-3] c.i.E.service.UserService                : Successfully saved user 'Abhisek' with new ID: 452
+2026-03-15T22:00:08.720+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-3] c.i.E.controller.UserController          : User 'Abhisek' registered successfully with ID: 452
+2026-03-15T22:03:02.591+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-5] c.i.E.controller.UserController          : Received request to register a new user.
+2026-03-15T22:03:04.075+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-5] c.i.E.service.UserService                : Attempting to save new user 'Abhisek' to the database.
+2026-03-15T22:03:04.135+05:30  WARN 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-5] c.i.E.service.UserService                : Registration failed: Username 'Abhisek' is already taken.
+2026-03-15T22:03:18.843+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-6] c.i.E.controller.UserController          : Received request to register a new user.
+2026-03-15T22:03:20.238+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-6] c.i.E.service.UserService                : Attempting to save new user 'Abhisek1' to the database.
+2026-03-15T22:03:20.251+05:30  WARN 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-6] c.i.E.service.UserService                : Registration failed: Email 'abhisekJha@gmail.com' is already registered.
+2026-03-15T22:04:54.632+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-9] c.i.E.controller.UserController          : Received login request for user: null
+2026-03-15T22:04:54.637+05:30 ERROR 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-9] c.i.E.controller.UserController          : Login failed: Request Body is missing or invalid.
+2026-03-15T22:05:04.275+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-1] c.i.E.controller.UserController          : Received login request for user: Swati
+2026-03-15T22:05:04.276+05:30 ERROR 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-1] c.i.E.controller.UserController          : Login failed: Request Body is missing or invalid.
+2026-03-15T22:05:41.590+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-2] c.i.E.controller.UserController          : Received login request for user: Swati
+2026-03-15T22:05:41.591+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-2] c.i.E.service.UserService                : Attempting to authenticate credentials for user: 'Swati'
+2026-03-15T22:05:42.205+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-2] c.i.E.service.DemoUserService            : Attempting to load user details for username: 'Swati'
+2026-03-15T22:05:42.218+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-2] c.i.E.service.DemoUserService            : Successfully loaded user details for username: 'Swati'
+2026-03-15T22:05:42.899+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-2] c.i.E.service.UserService                : Authentication successful for user: 'Swati'. Generating JWT...
+2026-03-15T22:05:43.213+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-2] c.i.E.controller.UserController          : User 'Swati' logged in successfully.
+2026-03-15T22:06:59.913+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-6] c.i.E.controller.UserController          : Received login request for user: Abhisek
+2026-03-15T22:06:59.915+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-6] c.i.E.service.UserService                : Attempting to authenticate credentials for user: 'Abhisek'
+2026-03-15T22:06:59.918+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-6] c.i.E.service.DemoUserService            : Attempting to load user details for username: 'Abhisek'
+2026-03-15T22:06:59.927+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-6] c.i.E.service.DemoUserService            : Successfully loaded user details for username: 'Abhisek'
+2026-03-15T22:07:00.466+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-6] c.i.E.service.UserService                : Authentication successful for user: 'Abhisek'. Generating JWT...
+2026-03-15T22:07:00.468+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-6] c.i.E.controller.UserController          : User 'Abhisek' logged in successfully.
+2026-03-15T22:07:31.335+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-7] c.i.E.service.DemoUserService            : Attempting to load user details for username: 'Abhisek'
+2026-03-15T22:07:31.343+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-7] c.i.E.service.DemoUserService            : Successfully loaded user details for username: 'Abhisek'
+2026-03-15T22:07:31.379+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-7] c.i.E.controller.UserController          : Received request to fetch details for user ID: 452
+2026-03-15T22:07:31.381+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-7] c.i.E.service.UserService                : Attempting to fetch details for user ID: 452
+2026-03-15T22:07:31.429+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-7] c.i.E.service.UserService                : Successfully fetched details for user ID: 452
+2026-03-15T22:07:31.429+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-7] c.i.E.controller.UserController          : Successfully fetched details for user ID: 452
+2026-03-15T22:10:25.392+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-10] c.i.E.service.DemoUserService            : Attempting to load user details for username: 'Abhisek'
+2026-03-15T22:10:25.404+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-10] c.i.E.service.DemoUserService            : Successfully loaded user details for username: 'Abhisek'
+2026-03-15T22:10:25.420+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-10] c.i.E.controller.UserController          : Received request to update user with ID: 452
+2026-03-15T22:10:25.522+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-10] c.i.E.service.UserService                : Attempting to update details for user ID: 452
+2026-03-15T22:10:25.539+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-10] c.i.E.service.UserService                : Successfully updated details for user ID: 452
+2026-03-15T22:10:25.588+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-10] c.i.E.controller.UserController          : User with ID 452 updated successfully.
+2026-03-15T22:11:21.270+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-1] c.i.E.service.DemoUserService            : Attempting to load user details for username: 'Abhisek'
+2026-03-15T22:11:21.278+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-1] c.i.E.service.DemoUserService            : Successfully loaded user details for username: 'Abhisek'
+2026-03-15T22:11:21.323+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-1] c.i.E.controller.ProductController       : Received request to fetch all products. Page: 1, Size: 5, SortBy: id
+2026-03-15T22:11:21.325+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-1] c.i.E.service.ProductService             : Fetching all products from the database with pagination.
+2026-03-15T22:11:21.458+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-1] c.i.E.service.ProductService             : Successfully fetched 5 products.
+2026-03-15T22:11:21.459+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-1] c.i.E.controller.ProductController       : Successfully fetched 5 products (Page 1).
+2026-03-15T22:11:21.472+05:30  WARN 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-1] ration$PageModule$WarningLoggingModifier : Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2026-03-15T22:11:31.667+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-3] c.i.E.service.DemoUserService            : Attempting to load user details for username: 'Abhisek'
+2026-03-15T22:11:31.674+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-3] c.i.E.service.DemoUserService            : Successfully loaded user details for username: 'Abhisek'
+2026-03-15T22:11:31.682+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-3] c.i.E.controller.ProductController       : Received request to fetch all products. Page: 3, Size: 5, SortBy: id
+2026-03-15T22:11:31.682+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-3] c.i.E.service.ProductService             : Fetching all products from the database with pagination.
+2026-03-15T22:11:31.699+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-3] c.i.E.service.ProductService             : Successfully fetched 5 products.
+2026-03-15T22:11:31.699+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-3] c.i.E.controller.ProductController       : Successfully fetched 5 products (Page 3).
+2026-03-15T22:12:20.455+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-2] c.i.E.service.DemoUserService            : Attempting to load user details for username: 'Abhisek'
+2026-03-15T22:12:20.463+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-2] c.i.E.service.DemoUserService            : Successfully loaded user details for username: 'Abhisek'
+2026-03-15T22:12:20.477+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-2] c.i.E.controller.ProductController       : Received request to fetch products for category: 'Luxury'. Page: 0, Size: 5
+2026-03-15T22:12:20.478+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-2] c.i.E.service.ProductService             : Fetching products for category: 'Luxury'
+2026-03-15T22:12:20.510+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-2] c.i.E.service.ProductService             : Successfully fetched 2 products for category: 'Luxury'
+2026-03-15T22:12:20.511+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-2] c.i.E.controller.ProductController       : Successfully fetched 2 products for category: 'Luxury'
+2026-03-15T22:13:12.951+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-4] c.i.E.service.DemoUserService            : Attempting to load user details for username: 'Abhisek'
+2026-03-15T22:13:12.961+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-4] c.i.E.service.DemoUserService            : Successfully loaded user details for username: 'Abhisek'
+2026-03-15T22:13:12.973+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-4] c.i.E.controller.ProductController       : Received request to fetch all products. Page: 0, Size: 5, SortBy: price
+2026-03-15T22:13:12.973+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-4] c.i.E.service.ProductService             : Fetching all products from the database with pagination.
+2026-03-15T22:13:12.989+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-4] c.i.E.service.ProductService             : Successfully fetched 5 products.
+2026-03-15T22:13:12.990+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-4] c.i.E.controller.ProductController       : Successfully fetched 5 products (Page 0).
+2026-03-15T22:13:46.829+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-5] c.i.E.service.DemoUserService            : Attempting to load user details for username: 'Abhisek'
+2026-03-15T22:13:46.834+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-5] c.i.E.service.DemoUserService            : Successfully loaded user details for username: 'Abhisek'
+2026-03-15T22:13:46.846+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-5] c.i.E.controller.CartController          : Received request to add product ID: 18 to cart with quantity: 1
+2026-03-15T22:13:46.847+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-5] c.i.E.service.CartService                : Attempting to add product ID: 18 to cart. Quantity: 1
+2026-03-15T22:13:46.894+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-5] c.i.E.service.CartService                : No existing cart found for user ID: 452. Creating a new cart.
+2026-03-15T22:13:46.983+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-5] c.i.E.service.CartService                : Product ID 18 is not yet in the cart. Adding as a new item.
+2026-03-15T22:13:47.046+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-5] c.i.E.service.CartService                : Successfully updated cart for user ID 452. New cart total: 2500.0
+2026-03-15T22:13:47.047+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-5] c.i.E.controller.CartController          : Successfully added product ID: 18 to cart. Current cart total: 2500.0
+2026-03-15T22:14:03.922+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-6] c.i.E.service.DemoUserService            : Attempting to load user details for username: 'Abhisek'
+2026-03-15T22:14:03.933+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-6] c.i.E.service.DemoUserService            : Successfully loaded user details for username: 'Abhisek'
+2026-03-15T22:14:03.949+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-6] c.i.E.controller.CartController          : Received request to fetch cart details.
+2026-03-15T22:14:03.950+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-6] c.i.E.service.CartService                : Fetching cart details for user ID: 452
+2026-03-15T22:14:03.960+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-6] c.i.E.service.CartService                : Successfully retrieved cart for user ID: 452
+2026-03-15T22:14:03.961+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-6] c.i.E.controller.CartController          : Successfully fetched cart details containing 1 unique item(s).
+2026-03-15T22:14:15.210+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-7] c.i.E.service.DemoUserService            : Attempting to load user details for username: 'Abhisek'
+2026-03-15T22:14:15.217+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-7] c.i.E.service.DemoUserService            : Successfully loaded user details for username: 'Abhisek'
+2026-03-15T22:14:15.226+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-7] c.i.E.controller.CartController          : Received request to view total cart price before checkout.
+2026-03-15T22:14:15.226+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-7] c.i.E.service.CartService                : Calculating total cart price for user ID: 452
+2026-03-15T22:14:15.238+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-7] c.i.E.service.CartService                : Total price for user ID 452 is 2500.0
+2026-03-15T22:14:15.239+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-7] c.i.E.controller.CartController          : Successfully calculated cart total price: 2500.0
+2026-03-15T22:14:35.159+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-8] c.i.E.service.DemoUserService            : Attempting to load user details for username: 'Abhisek'
+2026-03-15T22:14:35.166+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-8] c.i.E.service.DemoUserService            : Successfully loaded user details for username: 'Abhisek'
+2026-03-15T22:14:35.177+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-8] c.i.E.controller.CartController          : Received request to add product ID: 9 to cart with quantity: 1
+2026-03-15T22:14:35.177+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-8] c.i.E.service.CartService                : Attempting to add product ID: 9 to cart. Quantity: 1
+2026-03-15T22:14:35.197+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-8] c.i.E.service.CartService                : Product ID 9 is not yet in the cart. Adding as a new item.
+2026-03-15T22:14:35.209+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-8] c.i.E.service.CartService                : Successfully updated cart for user ID 452. New cart total: 2820.0
+2026-03-15T22:14:35.209+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-8] c.i.E.controller.CartController          : Successfully added product ID: 9 to cart. Current cart total: 2820.0
+2026-03-15T22:14:44.755+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-9] c.i.E.service.DemoUserService            : Attempting to load user details for username: 'Abhisek'
+2026-03-15T22:14:44.763+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-9] c.i.E.service.DemoUserService            : Successfully loaded user details for username: 'Abhisek'
+2026-03-15T22:14:44.774+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-9] c.i.E.controller.CartController          : Received request to fetch cart details.
+2026-03-15T22:14:44.775+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-9] c.i.E.service.CartService                : Fetching cart details for user ID: 452
+2026-03-15T22:14:44.783+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-9] c.i.E.service.CartService                : Successfully retrieved cart for user ID: 452
+2026-03-15T22:14:44.784+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-9] c.i.E.controller.CartController          : Successfully fetched cart details containing 2 unique item(s).
+2026-03-15T22:14:46.931+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-10] c.i.E.service.DemoUserService            : Attempting to load user details for username: 'Abhisek'
+2026-03-15T22:14:46.936+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-10] c.i.E.service.DemoUserService            : Successfully loaded user details for username: 'Abhisek'
+2026-03-15T22:14:46.946+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-10] c.i.E.controller.CartController          : Received request to view total cart price before checkout.
+2026-03-15T22:14:46.946+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-10] c.i.E.service.CartService                : Calculating total cart price for user ID: 452
+2026-03-15T22:14:46.955+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-10] c.i.E.service.CartService                : Total price for user ID 452 is 2820.0
+2026-03-15T22:14:46.956+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-10] c.i.E.controller.CartController          : Successfully calculated cart total price: 2820.0
+2026-03-15T22:15:05.049+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-1] c.i.E.service.DemoUserService            : Attempting to load user details for username: 'Abhisek'
+2026-03-15T22:15:05.055+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-1] c.i.E.service.DemoUserService            : Successfully loaded user details for username: 'Abhisek'
+2026-03-15T22:15:05.069+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-1] c.i.E.controller.CartController          : Received request to update quantity for product ID: 9 to new quantity: 2
+2026-03-15T22:15:05.071+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-1] c.i.E.service.CartService                : Attempting to update quantity for product ID: 9 in cart for user ID: 452
+2026-03-15T22:15:05.081+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-1] c.i.E.service.CartService                : Successfully updated cart quantity for user ID: 452. New cart total: 3140.0
+2026-03-15T22:15:05.092+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-1] c.i.E.controller.CartController          : Successfully updated quantity for product ID: 9. New total price: 3140.0
+2026-03-15T22:15:18.941+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-3] c.i.E.service.DemoUserService            : Attempting to load user details for username: 'Abhisek'
+2026-03-15T22:15:18.947+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-3] c.i.E.service.DemoUserService            : Successfully loaded user details for username: 'Abhisek'
+2026-03-15T22:15:18.958+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-3] c.i.E.controller.CartController          : Received request to update quantity for product ID: 10 to new quantity: 2
+2026-03-15T22:15:18.959+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-3] c.i.E.service.CartService                : Attempting to update quantity for product ID: 10 in cart for user ID: 452
+2026-03-15T22:15:18.969+05:30  WARN 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-3] c.i.E.service.CartService                : Update aborted: Product ID 10 not found in cart for user ID: 452
+2026-03-15T22:15:42.180+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-2] c.i.E.service.DemoUserService            : Attempting to load user details for username: 'Abhisek'
+2026-03-15T22:15:42.187+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-2] c.i.E.service.DemoUserService            : Successfully loaded user details for username: 'Abhisek'
+2026-03-15T22:15:42.201+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-2] c.i.E.controller.CartController          : Received request to remove product ID: 8 from cart.
+2026-03-15T22:15:42.203+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-2] c.i.E.service.CartService                : Attempting to delete product ID: 8 from cart for user ID: 452
+2026-03-15T22:15:42.213+05:30  WARN 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-2] c.i.E.service.CartService                : Deletion aborted: Product ID 8 not found in cart for user ID: 452
+2026-03-15T22:15:49.305+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-4] c.i.E.service.DemoUserService            : Attempting to load user details for username: 'Abhisek'
+2026-03-15T22:15:49.311+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-4] c.i.E.service.DemoUserService            : Successfully loaded user details for username: 'Abhisek'
+2026-03-15T22:15:49.324+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-4] c.i.E.controller.CartController          : Received request to remove product ID: 9 from cart.
+2026-03-15T22:15:49.326+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-4] c.i.E.service.CartService                : Attempting to delete product ID: 9 from cart for user ID: 452
+2026-03-15T22:15:49.337+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-4] c.i.E.service.CartService                : Successfully deleted item from cart for user ID: 452. New cart total: 2500.0
+2026-03-15T22:15:49.364+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-4] c.i.E.controller.CartController          : Successfully removed product ID: 9 from cart. New total price: 2500.0
+2026-03-15T22:15:54.206+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-5] c.i.E.service.DemoUserService            : Attempting to load user details for username: 'Abhisek'
+2026-03-15T22:15:54.212+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-5] c.i.E.service.DemoUserService            : Successfully loaded user details for username: 'Abhisek'
+2026-03-15T22:15:54.222+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-5] c.i.E.controller.CartController          : Received request to fetch cart details.
+2026-03-15T22:15:54.222+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-5] c.i.E.service.CartService                : Fetching cart details for user ID: 452
+2026-03-15T22:15:54.230+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-5] c.i.E.service.CartService                : Successfully retrieved cart for user ID: 452
+2026-03-15T22:15:54.230+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-5] c.i.E.controller.CartController          : Successfully fetched cart details containing 1 unique item(s).
+2026-03-15T22:15:58.148+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-6] c.i.E.service.DemoUserService            : Attempting to load user details for username: 'Abhisek'
+2026-03-15T22:15:58.159+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-6] c.i.E.service.DemoUserService            : Successfully loaded user details for username: 'Abhisek'
+2026-03-15T22:15:58.174+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-6] c.i.E.controller.CartController          : Received request to view total cart price before checkout.
+2026-03-15T22:15:58.174+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-6] c.i.E.service.CartService                : Calculating total cart price for user ID: 452
+2026-03-15T22:15:58.183+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-6] c.i.E.service.CartService                : Total price for user ID 452 is 2500.0
+2026-03-15T22:15:58.184+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-6] c.i.E.controller.CartController          : Successfully calculated cart total price: 2500.0
+2026-03-15T22:16:23.253+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-7] c.i.E.service.DemoUserService            : Attempting to load user details for username: 'Abhisek'
+2026-03-15T22:16:23.261+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-7] c.i.E.service.DemoUserService            : Successfully loaded user details for username: 'Abhisek'
+2026-03-15T22:16:23.278+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-7] c.i.E.controller.OrderController         : Received checkout request with payment amount: 2499.0
+2026-03-15T22:16:23.281+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-7] c.i.E.service.OrderService               : Initiating checkout process for user ID: 452
+2026-03-15T22:16:23.291+05:30  WARN 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-7] c.i.E.service.OrderService               : Payment validation failed for user ID: 452. Amount provided: 2499.0, Required: 2500.0
+2026-03-15T22:16:23.292+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-7] c.i.E.service.OrderService               : Restoring product stock due to failed payment...
+2026-03-15T22:16:23.356+05:30 ERROR 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-7] c.i.E.controller.OrderController         : Checkout failed. Payment validation unsuccessful for amount: 2499.0
+2026-03-15T22:17:00.541+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-9] c.i.E.service.DemoUserService            : Attempting to load user details for username: 'Abhisek'
+2026-03-15T22:17:00.550+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-9] c.i.E.service.DemoUserService            : Successfully loaded user details for username: 'Abhisek'
+2026-03-15T22:17:00.570+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-9] c.i.E.controller.OrderController         : Received checkout request with payment amount: 2500.0
+2026-03-15T22:17:00.572+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-9] c.i.E.service.OrderService               : Initiating checkout process for user ID: 452
+2026-03-15T22:17:00.582+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-9] c.i.E.service.OrderService               : Order successfully placed for user ID: 452. Order ID: 453
+2026-03-15T22:17:00.582+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-9] c.i.E.service.OrderService               : Clearing cart for user ID: 452
+2026-03-15T22:17:00.604+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [task-1] c.i.E.service.EmailService               : Attempting to send background email to: namitajena8116@gmail.com
+2026-03-15T22:17:00.626+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-9] c.i.E.controller.OrderController         : Checkout successful! Order ID 453 created with total amount: 2500.0
+2026-03-15T22:17:05.839+05:30  INFO 7232 --- [E_Commerce_Backend_System] [task-1] c.i.E.service.EmailService               : Successfully sent email to: namitajena8116@gmail.com
+2026-03-15T22:17:44.206+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-10] c.i.E.service.DemoUserService            : Attempting to load user details for username: 'Abhisek'
+2026-03-15T22:17:44.214+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-10] c.i.E.service.DemoUserService            : Successfully loaded user details for username: 'Abhisek'
+2026-03-15T22:17:44.233+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-10] c.i.E.controller.CartController          : Received request to fetch cart details.
+2026-03-15T22:17:44.233+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-10] c.i.E.service.CartService                : Fetching cart details for user ID: 452
+2026-03-15T22:17:44.236+05:30  WARN 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-10] c.i.E.service.CartService                : Cart is empty or not found for user ID: 452
+2026-03-15T22:17:44.236+05:30  WARN 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-10] c.i.E.controller.CartController          : Fetch failed: User's cart is currently empty.
+2026-03-15T22:18:33.832+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-1] c.i.E.service.DemoUserService            : Attempting to load user details for username: 'Abhisek'
+2026-03-15T22:18:33.841+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-1] c.i.E.service.DemoUserService            : Successfully loaded user details for username: 'Abhisek'
+2026-03-15T22:18:33.869+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-1] c.i.E.controller.OrderController         : Received request to fetch orders. Page: 0, Size: 5, SortBy: id
+2026-03-15T22:18:33.871+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-1] c.i.E.service.OrderService               : Customer fetch: Retrieving all orders for user ID: 452
+2026-03-15T22:18:33.919+05:30  WARN 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-1] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2026-03-15T22:18:33.950+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-1] c.i.E.controller.OrderController         : Successfully fetched 2 orders.
+2026-03-15T22:18:56.768+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-3] c.i.E.service.DemoUserService            : Attempting to load user details for username: 'Abhisek'
+2026-03-15T22:18:56.776+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-3] c.i.E.service.DemoUserService            : Successfully loaded user details for username: 'Abhisek'
+2026-03-15T22:18:56.795+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-3] c.i.E.controller.OrderController         : Received request to fetch order history. Page: 0, Size: 5
+2026-03-15T22:18:56.796+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-3] c.i.E.service.OrderService               : Fetching order history for user ID: 452
+2026-03-15T22:18:56.800+05:30  WARN 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-3] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2026-03-15T22:18:56.810+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-3] c.i.E.controller.OrderController         : Successfully fetched 2 historical orders.
+2026-03-15T22:19:14.487+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-2] c.i.E.service.DemoUserService            : Attempting to load user details for username: 'Abhisek'
+2026-03-15T22:19:14.493+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-2] c.i.E.service.DemoUserService            : Successfully loaded user details for username: 'Abhisek'
+2026-03-15T22:19:14.514+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-2] c.i.E.controller.OrderController         : Received request to fetch details for order ID: 452
+2026-03-15T22:19:14.516+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-2] c.i.E.service.OrderService               : Attempting to fetch details for order ID: 452
+2026-03-15T22:19:14.527+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-2] c.i.E.service.OrderService               : Successfully fetched details for order ID: 452
+2026-03-15T22:19:14.531+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-2] c.i.E.controller.OrderController         : Successfully fetched details for order ID: 452
+2026-03-15T22:19:21.404+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-4] c.i.E.service.DemoUserService            : Attempting to load user details for username: 'Abhisek'
+2026-03-15T22:19:21.410+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-4] c.i.E.service.DemoUserService            : Successfully loaded user details for username: 'Abhisek'
+2026-03-15T22:19:21.425+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-4] c.i.E.controller.OrderController         : Received request to fetch details for order ID: 453
+2026-03-15T22:19:21.425+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-4] c.i.E.service.OrderService               : Attempting to fetch details for order ID: 453
+2026-03-15T22:19:21.433+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-4] c.i.E.service.OrderService               : Successfully fetched details for order ID: 453
+2026-03-15T22:19:21.436+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-4] c.i.E.controller.OrderController         : Successfully fetched details for order ID: 453
+2026-03-15T22:19:28.187+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-5] c.i.E.service.DemoUserService            : Attempting to load user details for username: 'Abhisek'
+2026-03-15T22:19:28.192+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-5] c.i.E.service.DemoUserService            : Successfully loaded user details for username: 'Abhisek'
+2026-03-15T22:19:28.206+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-5] c.i.E.controller.OrderController         : Received request to fetch details for order ID: 454
+2026-03-15T22:19:28.206+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-5] c.i.E.service.OrderService               : Attempting to fetch details for order ID: 454
+2026-03-15T22:19:28.211+05:30  WARN 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-5] c.i.E.service.OrderService               : Fetch aborted: No order found in database with ID: 454
+2026-03-15T22:19:28.211+05:30 ERROR 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-5] c.i.E.controller.OrderController         : Fetch failed: Order with ID 454 not found or access denied.
+2026-03-15T22:39:19.623+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-7] c.i.E.controller.UserController          : Received login request for user: Rajesh
+2026-03-15T22:39:19.664+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-7] c.i.E.service.UserService                : Attempting to authenticate credentials for user: 'Rajesh'
+2026-03-15T22:39:19.776+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-7] c.i.E.service.DemoUserService            : Attempting to load user details for username: 'Rajesh'
+2026-03-15T22:39:20.011+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-7] c.i.E.service.DemoUserService            : Successfully loaded user details for username: 'Rajesh'
+2026-03-15T22:39:20.807+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-7] c.i.E.service.UserService                : Authentication successful for user: 'Rajesh'. Generating JWT...
+2026-03-15T22:39:20.860+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-7] c.i.E.controller.UserController          : User 'Rajesh' logged in successfully.
+2026-03-15T22:39:44.621+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-9] c.i.E.service.DemoUserService            : Attempting to load user details for username: 'Rajesh'
+2026-03-15T22:39:44.625+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-9] c.i.E.service.DemoUserService            : Successfully loaded user details for username: 'Rajesh'
+2026-03-15T22:39:44.642+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-9] c.i.E.controller.UserController          : Received request to fetch details for user ID: 452
+2026-03-15T22:39:44.642+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-9] c.i.E.service.UserService                : Attempting to fetch details for user ID: 452
+2026-03-15T22:39:44.674+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-9] c.i.E.service.UserService                : Sanitizing response: Masking cart data from non-owner view.
+2026-03-15T22:39:44.675+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-9] c.i.E.service.UserService                : Successfully fetched details for user ID: 452
+2026-03-15T22:39:44.675+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-9] c.i.E.controller.UserController          : Successfully fetched details for user ID: 452
+2026-03-15T22:40:13.302+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-10] c.i.E.service.DemoUserService            : Attempting to load user details for username: 'Rajesh'
+2026-03-15T22:40:13.311+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-10] c.i.E.service.DemoUserService            : Successfully loaded user details for username: 'Rajesh'
+2026-03-15T22:40:13.334+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-10] c.i.E.controller.UserController          : Received request to fetch all users.
+2026-03-15T22:40:13.340+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-10] c.i.E.service.UserService                : Attempting to fetch all users from the database.
+2026-03-15T22:40:13.572+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-10] c.i.E.service.UserService                : Successfully fetched and mapped 7 users.
+2026-03-15T22:40:13.573+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-10] c.i.E.controller.UserController          : Successfully fetched 7 users.
+2026-03-15T22:40:47.210+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-1] c.i.E.service.DemoUserService            : Attempting to load user details for username: 'Rajesh'
+2026-03-15T22:40:47.215+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-1] c.i.E.service.DemoUserService            : Successfully loaded user details for username: 'Rajesh'
+2026-03-15T22:40:47.235+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-1] c.i.E.controller.UserController          : Received request to update user with ID: 452
+2026-03-15T22:40:47.269+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-1] c.i.E.service.UserService                : Attempting to update details for user ID: 452
+2026-03-15T22:40:47.283+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-1] c.i.E.service.UserService                : Successfully updated details for user ID: 452
+2026-03-15T22:40:47.374+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-1] c.i.E.controller.UserController          : User with ID 452 updated successfully.
+2026-03-15T22:41:59.116+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-2] c.i.E.service.DemoUserService            : Attempting to load user details for username: 'Rajesh'
+2026-03-15T22:41:59.123+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-2] c.i.E.service.DemoUserService            : Successfully loaded user details for username: 'Rajesh'
+2026-03-15T22:45:40.782+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-6] c.i.E.service.DemoUserService            : Attempting to load user details for username: 'Rajesh'
+2026-03-15T22:45:40.789+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-6] c.i.E.service.DemoUserService            : Successfully loaded user details for username: 'Rajesh'
+2026-03-15T22:48:53.649+05:30 ERROR 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+
+io.jsonwebtoken.MalformedJwtException: Invalid compact JWT string: Compact JWSs must contain exactly 2 period characters, and compact JWEs must contain exactly 4.  Found: 0
+	at io.jsonwebtoken.impl.JwtTokenizer.tokenize(JwtTokenizer.java:102) ~[jjwt-impl-0.12.6.jar:0.12.6]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:372) ~[jjwt-impl-0.12.6.jar:0.12.6]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:364) ~[jjwt-impl-0.12.6.jar:0.12.6]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:94) ~[jjwt-impl-0.12.6.jar:0.12.6]
+	at io.jsonwebtoken.impl.io.AbstractParser.parse(AbstractParser.java:36) ~[jjwt-impl-0.12.6.jar:0.12.6]
+	at io.jsonwebtoken.impl.io.AbstractParser.parse(AbstractParser.java:29) ~[jjwt-impl-0.12.6.jar:0.12.6]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseSignedClaims(DefaultJwtParser.java:830) ~[jjwt-impl-0.12.6.jar:0.12.6]
+	at com.incture.E_Commerce_Backend_System.utils.JWTUtils.extractAllClaims(JWTUtils.java:65) ~[classes/:na]
+	at com.incture.E_Commerce_Backend_System.utils.JWTUtils.extractClaim(JWTUtils.java:59) ~[classes/:na]
+	at com.incture.E_Commerce_Backend_System.utils.JWTUtils.extractUsername(JWTUtils.java:54) ~[classes/:na]
+	at com.incture.E_Commerce_Backend_System.filter.JWTFilter.doFilterInternal(JWTFilter.java:46) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317) ~[spring-security-config-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2026-03-15T22:49:12.803+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-9] c.i.E.service.DemoUserService            : Attempting to load user details for username: 'Rajesh'
+2026-03-15T22:49:12.856+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-9] c.i.E.service.DemoUserService            : Successfully loaded user details for username: 'Rajesh'
+2026-03-15T22:49:12.892+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-9] c.i.E.controller.ProductController       : Received request to fetch all products. Page: 0, Size: 5, SortBy: price
+2026-03-15T22:49:12.895+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-9] c.i.E.service.ProductService             : Fetching all products from the database with pagination.
+2026-03-15T22:49:13.037+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-9] c.i.E.service.ProductService             : Successfully fetched 5 products.
+2026-03-15T22:49:13.038+05:30  INFO 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-9] c.i.E.controller.ProductController       : Successfully fetched 5 products (Page 0).
+2026-03-15T22:49:21.719+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-10] c.i.E.service.DemoUserService            : Attempting to load user details for username: 'Rajesh'
+2026-03-15T22:49:21.726+05:30 DEBUG 7232 --- [E_Commerce_Backend_System] [http-nio-8080-exec-10] c.i.E.service.DemoUserService            : Successfully loaded user details for username: 'Rajesh'
+2026-03-15T22:53:21.264+05:30  INFO 7232 --- [E_Commerce_Backend_System] [RMI TCP Connection(61)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2026-03-15T22:53:21.321+05:30  INFO 7232 --- [E_Commerce_Backend_System] [RMI TCP Connection(61)-127.0.0.1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-15T22:53:21.337+05:30  INFO 7232 --- [E_Commerce_Backend_System] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-15T22:53:21.364+05:30  INFO 7232 --- [E_Commerce_Backend_System] [RMI TCP Connection(61)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-15T22:53:21.391+05:30  INFO 7232 --- [E_Commerce_Backend_System] [RMI TCP Connection(61)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : ECommerceBackendSystemApplication - Shutdown initiated...
+2026-03-15T22:53:21.399+05:30  INFO 7232 --- [E_Commerce_Backend_System] [RMI TCP Connection(61)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : ECommerceBackendSystemApplication - Shutdown completed.
+2026-03-15T22:54:16.424+05:30  INFO 10212 --- [E_Commerce_Backend_System] [main] c.i.E.ECommerceBackendSystemApplication  : Starting ECommerceBackendSystemApplication using Java 21.0.9 with PID 10212 (D:\JAVA-PROGRAMMING\ProductionJava\E_Commerce_Backend_System\target\classes started by rkjra in D:\JAVA-PROGRAMMING\ProductionJava\E_Commerce_Backend_System)
+2026-03-15T22:54:16.427+05:30  INFO 10212 --- [E_Commerce_Backend_System] [main] c.i.E.ECommerceBackendSystemApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-03-15T22:54:17.258+05:30  INFO 10212 --- [E_Commerce_Backend_System] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-15T22:54:17.336+05:30  INFO 10212 --- [E_Commerce_Backend_System] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 6 JPA repository interfaces.
+2026-03-15T22:54:17.973+05:30  INFO 10212 --- [E_Commerce_Backend_System] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-03-15T22:54:17.990+05:30  INFO 10212 --- [E_Commerce_Backend_System] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-15T22:54:17.990+05:30  INFO 10212 --- [E_Commerce_Backend_System] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-15T22:54:18.051+05:30  INFO 10212 --- [E_Commerce_Backend_System] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1554 ms
+2026-03-15T22:54:18.238+05:30  INFO 10212 --- [E_Commerce_Backend_System] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-15T22:54:18.328+05:30  INFO 10212 --- [E_Commerce_Backend_System] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-03-15T22:54:18.862+05:30  INFO 10212 --- [E_Commerce_Backend_System] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-15T22:54:18.913+05:30  INFO 10212 --- [E_Commerce_Backend_System] [main] com.zaxxer.hikari.HikariDataSource       : ECommerceBackendSystemApplication - Starting...
+2026-03-15T22:54:19.306+05:30  INFO 10212 --- [E_Commerce_Backend_System] [main] com.zaxxer.hikari.pool.HikariPool        : ECommerceBackendSystemApplication - Added connection com.mysql.cj.jdbc.ConnectionImpl@3b64f131
+2026-03-15T22:54:19.308+05:30  INFO 10212 --- [E_Commerce_Backend_System] [main] com.zaxxer.hikari.HikariDataSource       : ECommerceBackendSystemApplication - Start completed.
+2026-03-15T22:54:19.432+05:30  WARN 10212 --- [E_Commerce_Backend_System] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-15T22:54:19.459+05:30  INFO 10212 --- [E_Commerce_Backend_System] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/inctureECommerceDatabase]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.34
+	Default catalog/schema: inctureECommerceDatabase/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-15T22:54:20.702+05:30  INFO 10212 --- [E_Commerce_Backend_System] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-15T22:54:20.881+05:30  INFO 10212 --- [E_Commerce_Backend_System] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-15T22:54:20.987+05:30  INFO 10212 --- [E_Commerce_Backend_System] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-03-15T22:54:22.059+05:30  INFO 10212 --- [E_Commerce_Backend_System] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-03-15T22:54:22.060+05:30  WARN 10212 --- [E_Commerce_Backend_System] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-03-15T22:54:22.131+05:30  WARN 10212 --- [E_Commerce_Backend_System] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-15T22:54:22.778+05:30  INFO 10212 --- [E_Commerce_Backend_System] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-03-15T22:54:22.785+05:30  INFO 10212 --- [E_Commerce_Backend_System] [main] c.i.E.ECommerceBackendSystemApplication  : Started ECommerceBackendSystemApplication in 6.837 seconds (process running for 7.707)
+2026-03-15T22:54:30.809+05:30  INFO 10212 --- [E_Commerce_Backend_System] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-15T22:54:30.809+05:30  INFO 10212 --- [E_Commerce_Backend_System] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-15T22:54:30.812+05:30  INFO 10212 --- [E_Commerce_Backend_System] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-03-15T22:54:31.103+05:30 DEBUG 10212 --- [E_Commerce_Backend_System] [http-nio-8080-exec-1] c.i.E.service.DemoUserService            : Attempting to load user details for username: 'Rajesh'
+2026-03-15T22:54:31.342+05:30 DEBUG 10212 --- [E_Commerce_Backend_System] [http-nio-8080-exec-1] c.i.E.service.DemoUserService            : Successfully loaded user details for username: 'Rajesh'
+2026-03-15T22:56:08.513+05:30  INFO 10212 --- [E_Commerce_Backend_System] [RMI TCP Connection(4)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2026-03-15T22:56:08.518+05:30  INFO 10212 --- [E_Commerce_Backend_System] [RMI TCP Connection(4)-127.0.0.1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-15T22:56:08.524+05:30  INFO 10212 --- [E_Commerce_Backend_System] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-15T22:56:08.528+05:30  INFO 10212 --- [E_Commerce_Backend_System] [RMI TCP Connection(4)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-15T22:56:08.530+05:30  INFO 10212 --- [E_Commerce_Backend_System] [RMI TCP Connection(4)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : ECommerceBackendSystemApplication - Shutdown initiated...
+2026-03-15T22:56:08.540+05:30  INFO 10212 --- [E_Commerce_Backend_System] [RMI TCP Connection(4)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : ECommerceBackendSystemApplication - Shutdown completed.
+2026-03-15T22:56:53.064+05:30  INFO 20632 --- [E_Commerce_Backend_System] [main] c.i.E.ECommerceBackendSystemApplication  : Starting ECommerceBackendSystemApplication using Java 21.0.9 with PID 20632 (D:\JAVA-PROGRAMMING\ProductionJava\E_Commerce_Backend_System\target\classes started by rkjra in D:\JAVA-PROGRAMMING\ProductionJava\E_Commerce_Backend_System)
+2026-03-15T22:56:53.069+05:30  INFO 20632 --- [E_Commerce_Backend_System] [main] c.i.E.ECommerceBackendSystemApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-03-15T22:56:53.721+05:30  INFO 20632 --- [E_Commerce_Backend_System] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-15T22:56:53.784+05:30  INFO 20632 --- [E_Commerce_Backend_System] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 6 JPA repository interfaces.
+2026-03-15T22:56:54.323+05:30  INFO 20632 --- [E_Commerce_Backend_System] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-03-15T22:56:54.336+05:30  INFO 20632 --- [E_Commerce_Backend_System] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-15T22:56:54.336+05:30  INFO 20632 --- [E_Commerce_Backend_System] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-15T22:56:54.384+05:30  INFO 20632 --- [E_Commerce_Backend_System] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1268 ms
+2026-03-15T22:56:54.539+05:30  INFO 20632 --- [E_Commerce_Backend_System] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-15T22:56:54.584+05:30  INFO 20632 --- [E_Commerce_Backend_System] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-03-15T22:56:54.982+05:30  INFO 20632 --- [E_Commerce_Backend_System] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-15T22:56:55.035+05:30  INFO 20632 --- [E_Commerce_Backend_System] [main] com.zaxxer.hikari.HikariDataSource       : ECommerceBackendSystemApplication - Starting...
+2026-03-15T22:56:55.401+05:30  INFO 20632 --- [E_Commerce_Backend_System] [main] com.zaxxer.hikari.pool.HikariPool        : ECommerceBackendSystemApplication - Added connection com.mysql.cj.jdbc.ConnectionImpl@1d008e61
+2026-03-15T22:56:55.404+05:30  INFO 20632 --- [E_Commerce_Backend_System] [main] com.zaxxer.hikari.HikariDataSource       : ECommerceBackendSystemApplication - Start completed.
+2026-03-15T22:56:55.465+05:30  WARN 20632 --- [E_Commerce_Backend_System] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-15T22:56:55.482+05:30  INFO 20632 --- [E_Commerce_Backend_System] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/inctureECommerceDatabase]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.34
+	Default catalog/schema: inctureECommerceDatabase/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-15T22:56:56.479+05:30  INFO 20632 --- [E_Commerce_Backend_System] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-15T22:56:56.566+05:30  INFO 20632 --- [E_Commerce_Backend_System] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-15T22:56:56.700+05:30  INFO 20632 --- [E_Commerce_Backend_System] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-03-15T22:56:57.630+05:30  INFO 20632 --- [E_Commerce_Backend_System] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-03-15T22:56:57.631+05:30  WARN 20632 --- [E_Commerce_Backend_System] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-03-15T22:56:57.689+05:30  WARN 20632 --- [E_Commerce_Backend_System] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-15T22:56:58.291+05:30  INFO 20632 --- [E_Commerce_Backend_System] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-03-15T22:56:58.298+05:30  INFO 20632 --- [E_Commerce_Backend_System] [main] c.i.E.ECommerceBackendSystemApplication  : Started ECommerceBackendSystemApplication in 5.686 seconds (process running for 6.361)
+2026-03-15T22:57:01.981+05:30  INFO 20632 --- [E_Commerce_Backend_System] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-15T22:57:01.982+05:30  INFO 20632 --- [E_Commerce_Backend_System] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-15T22:57:01.986+05:30  INFO 20632 --- [E_Commerce_Backend_System] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-03-15T22:57:02.205+05:30 DEBUG 20632 --- [E_Commerce_Backend_System] [http-nio-8080-exec-1] c.i.E.service.DemoUserService            : Attempting to load user details for username: 'Rajesh'
+2026-03-15T22:57:02.474+05:30 DEBUG 20632 --- [E_Commerce_Backend_System] [http-nio-8080-exec-1] c.i.E.service.DemoUserService            : Successfully loaded user details for username: 'Rajesh'
+2026-03-15T23:01:17.847+05:30  INFO 20632 --- [E_Commerce_Backend_System] [RMI TCP Connection(8)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2026-03-15T23:01:17.853+05:30  INFO 20632 --- [E_Commerce_Backend_System] [RMI TCP Connection(8)-127.0.0.1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-15T23:01:17.865+05:30  INFO 20632 --- [E_Commerce_Backend_System] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-15T23:01:17.873+05:30  INFO 20632 --- [E_Commerce_Backend_System] [RMI TCP Connection(8)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-15T23:01:17.879+05:30  INFO 20632 --- [E_Commerce_Backend_System] [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : ECommerceBackendSystemApplication - Shutdown initiated...
+2026-03-15T23:01:17.890+05:30  INFO 20632 --- [E_Commerce_Backend_System] [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : ECommerceBackendSystemApplication - Shutdown completed.
+2026-03-15T23:01:19.882+05:30  INFO 20892 --- [E_Commerce_Backend_System] [main] c.i.E.ECommerceBackendSystemApplication  : Starting ECommerceBackendSystemApplication using Java 21.0.9 with PID 20892 (D:\JAVA-PROGRAMMING\ProductionJava\E_Commerce_Backend_System\target\classes started by rkjra in D:\JAVA-PROGRAMMING\ProductionJava\E_Commerce_Backend_System)
+2026-03-15T23:01:19.884+05:30  INFO 20892 --- [E_Commerce_Backend_System] [main] c.i.E.ECommerceBackendSystemApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-03-15T23:01:20.571+05:30  INFO 20892 --- [E_Commerce_Backend_System] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-15T23:01:20.639+05:30  INFO 20892 --- [E_Commerce_Backend_System] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 6 JPA repository interfaces.
+2026-03-15T23:01:21.150+05:30  INFO 20892 --- [E_Commerce_Backend_System] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-03-15T23:01:21.165+05:30  INFO 20892 --- [E_Commerce_Backend_System] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-15T23:01:21.165+05:30  INFO 20892 --- [E_Commerce_Backend_System] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-15T23:01:21.208+05:30  INFO 20892 --- [E_Commerce_Backend_System] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1272 ms
+2026-03-15T23:01:21.362+05:30  INFO 20892 --- [E_Commerce_Backend_System] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-15T23:01:21.426+05:30  INFO 20892 --- [E_Commerce_Backend_System] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-03-15T23:01:21.874+05:30  INFO 20892 --- [E_Commerce_Backend_System] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-15T23:01:21.908+05:30  INFO 20892 --- [E_Commerce_Backend_System] [main] com.zaxxer.hikari.HikariDataSource       : ECommerceBackendSystemApplication - Starting...
+2026-03-15T23:01:22.206+05:30  INFO 20892 --- [E_Commerce_Backend_System] [main] com.zaxxer.hikari.pool.HikariPool        : ECommerceBackendSystemApplication - Added connection com.mysql.cj.jdbc.ConnectionImpl@4067634b
+2026-03-15T23:01:22.209+05:30  INFO 20892 --- [E_Commerce_Backend_System] [main] com.zaxxer.hikari.HikariDataSource       : ECommerceBackendSystemApplication - Start completed.
+2026-03-15T23:01:22.259+05:30  WARN 20892 --- [E_Commerce_Backend_System] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-15T23:01:22.274+05:30  INFO 20892 --- [E_Commerce_Backend_System] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/inctureECommerceDatabase]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.34
+	Default catalog/schema: inctureECommerceDatabase/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-15T23:01:23.237+05:30  INFO 20892 --- [E_Commerce_Backend_System] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-15T23:01:23.331+05:30  INFO 20892 --- [E_Commerce_Backend_System] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-15T23:01:23.394+05:30  INFO 20892 --- [E_Commerce_Backend_System] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-03-15T23:01:24.241+05:30  INFO 20892 --- [E_Commerce_Backend_System] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-03-15T23:01:24.242+05:30  WARN 20892 --- [E_Commerce_Backend_System] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-03-15T23:01:24.298+05:30  WARN 20892 --- [E_Commerce_Backend_System] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-15T23:01:24.922+05:30  INFO 20892 --- [E_Commerce_Backend_System] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-03-15T23:01:24.929+05:30  INFO 20892 --- [E_Commerce_Backend_System] [main] c.i.E.ECommerceBackendSystemApplication  : Started ECommerceBackendSystemApplication in 5.449 seconds (process running for 6.18)
+2026-03-15T23:01:35.608+05:30  INFO 20892 --- [E_Commerce_Backend_System] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-15T23:01:35.609+05:30  INFO 20892 --- [E_Commerce_Backend_System] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-15T23:01:35.614+05:30  INFO 20892 --- [E_Commerce_Backend_System] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2026-03-15T23:01:35.845+05:30 DEBUG 20892 --- [E_Commerce_Backend_System] [http-nio-8080-exec-1] c.i.E.service.DemoUserService            : Attempting to load user details for username: 'Rajesh'
+2026-03-15T23:01:36.041+05:30 DEBUG 20892 --- [E_Commerce_Backend_System] [http-nio-8080-exec-1] c.i.E.service.DemoUserService            : Successfully loaded user details for username: 'Rajesh'
+2026-03-15T23:04:04.499+05:30  INFO 20892 --- [E_Commerce_Backend_System] [RMI TCP Connection(6)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2026-03-15T23:04:04.505+05:30  INFO 20892 --- [E_Commerce_Backend_System] [RMI TCP Connection(6)-127.0.0.1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-15T23:04:04.513+05:30  INFO 20892 --- [E_Commerce_Backend_System] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-15T23:04:04.518+05:30  INFO 20892 --- [E_Commerce_Backend_System] [RMI TCP Connection(6)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-15T23:04:04.522+05:30  INFO 20892 --- [E_Commerce_Backend_System] [RMI TCP Connection(6)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : ECommerceBackendSystemApplication - Shutdown initiated...
+2026-03-15T23:04:04.532+05:30  INFO 20892 --- [E_Commerce_Backend_System] [RMI TCP Connection(6)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : ECommerceBackendSystemApplication - Shutdown completed.
+2026-03-15T23:04:27.273+05:30  INFO 16588 --- [E_Commerce_Backend_System] [main] c.i.E.ECommerceBackendSystemApplication  : Starting ECommerceBackendSystemApplication using Java 21.0.9 with PID 16588 (D:\JAVA-PROGRAMMING\ProductionJava\E_Commerce_Backend_System\target\classes started by rkjra in D:\JAVA-PROGRAMMING\ProductionJava\E_Commerce_Backend_System)
+2026-03-15T23:04:27.278+05:30  INFO 16588 --- [E_Commerce_Backend_System] [main] c.i.E.ECommerceBackendSystemApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-03-15T23:04:27.918+05:30  INFO 16588 --- [E_Commerce_Backend_System] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-15T23:04:27.983+05:30  INFO 16588 --- [E_Commerce_Backend_System] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 6 JPA repository interfaces.
+2026-03-15T23:04:28.670+05:30  INFO 16588 --- [E_Commerce_Backend_System] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-03-15T23:04:28.683+05:30  INFO 16588 --- [E_Commerce_Backend_System] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-15T23:04:28.684+05:30  INFO 16588 --- [E_Commerce_Backend_System] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-15T23:04:28.737+05:30  INFO 16588 --- [E_Commerce_Backend_System] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1411 ms
+2026-03-15T23:04:28.908+05:30  INFO 16588 --- [E_Commerce_Backend_System] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-15T23:04:28.999+05:30  INFO 16588 --- [E_Commerce_Backend_System] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-03-15T23:04:29.593+05:30  INFO 16588 --- [E_Commerce_Backend_System] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-15T23:04:29.638+05:30  INFO 16588 --- [E_Commerce_Backend_System] [main] com.zaxxer.hikari.HikariDataSource       : ECommerceBackendSystemApplication - Starting...
+2026-03-15T23:04:29.955+05:30  INFO 16588 --- [E_Commerce_Backend_System] [main] com.zaxxer.hikari.pool.HikariPool        : ECommerceBackendSystemApplication - Added connection com.mysql.cj.jdbc.ConnectionImpl@5059d398
+2026-03-15T23:04:29.956+05:30  INFO 16588 --- [E_Commerce_Backend_System] [main] com.zaxxer.hikari.HikariDataSource       : ECommerceBackendSystemApplication - Start completed.
+2026-03-15T23:04:30.016+05:30  WARN 16588 --- [E_Commerce_Backend_System] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-15T23:04:30.037+05:30  INFO 16588 --- [E_Commerce_Backend_System] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/inctureECommerceDatabase]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.34
+	Default catalog/schema: inctureECommerceDatabase/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-15T23:04:31.277+05:30  INFO 16588 --- [E_Commerce_Backend_System] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-15T23:04:31.379+05:30  INFO 16588 --- [E_Commerce_Backend_System] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-15T23:04:31.448+05:30  INFO 16588 --- [E_Commerce_Backend_System] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-03-15T23:04:32.504+05:30  INFO 16588 --- [E_Commerce_Backend_System] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-03-15T23:04:32.505+05:30  WARN 16588 --- [E_Commerce_Backend_System] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-03-15T23:04:32.568+05:30  WARN 16588 --- [E_Commerce_Backend_System] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-15T23:04:33.223+05:30  INFO 16588 --- [E_Commerce_Backend_System] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-03-15T23:04:33.229+05:30  INFO 16588 --- [E_Commerce_Backend_System] [main] c.i.E.ECommerceBackendSystemApplication  : Started ECommerceBackendSystemApplication in 6.422 seconds (process running for 7.056)
+2026-03-15T23:04:36.175+05:30  INFO 16588 --- [E_Commerce_Backend_System] [http-nio-8080-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-15T23:04:36.175+05:30  INFO 16588 --- [E_Commerce_Backend_System] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-15T23:04:36.179+05:30  INFO 16588 --- [E_Commerce_Backend_System] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-03-15T23:04:36.451+05:30 DEBUG 16588 --- [E_Commerce_Backend_System] [http-nio-8080-exec-4] c.i.E.service.DemoUserService            : Attempting to load user details for username: 'Rajesh'
+2026-03-15T23:04:36.686+05:30 DEBUG 16588 --- [E_Commerce_Backend_System] [http-nio-8080-exec-4] c.i.E.service.DemoUserService            : Successfully loaded user details for username: 'Rajesh'
+2026-03-15T23:07:29.923+05:30  INFO 16588 --- [E_Commerce_Backend_System] [RMI TCP Connection(5)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2026-03-15T23:07:29.934+05:30  INFO 16588 --- [E_Commerce_Backend_System] [RMI TCP Connection(5)-127.0.0.1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-15T23:07:29.947+05:30  INFO 16588 --- [E_Commerce_Backend_System] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-15T23:07:29.954+05:30  INFO 16588 --- [E_Commerce_Backend_System] [RMI TCP Connection(5)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-15T23:07:29.959+05:30  INFO 16588 --- [E_Commerce_Backend_System] [RMI TCP Connection(5)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : ECommerceBackendSystemApplication - Shutdown initiated...
+2026-03-15T23:07:29.973+05:30  INFO 16588 --- [E_Commerce_Backend_System] [RMI TCP Connection(5)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : ECommerceBackendSystemApplication - Shutdown completed.
+2026-03-15T23:11:30.799+05:30  INFO 9924 --- [E_Commerce_Backend_System] [main] c.i.E.ECommerceBackendSystemApplication  : Starting ECommerceBackendSystemApplication using Java 21.0.9 with PID 9924 (D:\JAVA-PROGRAMMING\ProductionJava\E_Commerce_Backend_System\target\classes started by rkjra in D:\JAVA-PROGRAMMING\ProductionJava\E_Commerce_Backend_System)
+2026-03-15T23:11:30.802+05:30  INFO 9924 --- [E_Commerce_Backend_System] [main] c.i.E.ECommerceBackendSystemApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-03-15T23:11:31.527+05:30  INFO 9924 --- [E_Commerce_Backend_System] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-15T23:11:31.588+05:30  INFO 9924 --- [E_Commerce_Backend_System] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 6 JPA repository interfaces.
+2026-03-15T23:11:32.192+05:30  INFO 9924 --- [E_Commerce_Backend_System] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-03-15T23:11:32.209+05:30  INFO 9924 --- [E_Commerce_Backend_System] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-15T23:11:32.209+05:30  INFO 9924 --- [E_Commerce_Backend_System] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-15T23:11:32.269+05:30  INFO 9924 --- [E_Commerce_Backend_System] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1411 ms
+2026-03-15T23:11:32.440+05:30  INFO 9924 --- [E_Commerce_Backend_System] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-15T23:11:32.507+05:30  INFO 9924 --- [E_Commerce_Backend_System] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-03-15T23:11:33.045+05:30  INFO 9924 --- [E_Commerce_Backend_System] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-15T23:11:33.095+05:30  INFO 9924 --- [E_Commerce_Backend_System] [main] com.zaxxer.hikari.HikariDataSource       : ECommerceBackendSystemApplication - Starting...
+2026-03-15T23:11:33.414+05:30  INFO 9924 --- [E_Commerce_Backend_System] [main] com.zaxxer.hikari.pool.HikariPool        : ECommerceBackendSystemApplication - Added connection com.mysql.cj.jdbc.ConnectionImpl@5b1420f9
+2026-03-15T23:11:33.416+05:30  INFO 9924 --- [E_Commerce_Backend_System] [main] com.zaxxer.hikari.HikariDataSource       : ECommerceBackendSystemApplication - Start completed.
+2026-03-15T23:11:33.479+05:30  WARN 9924 --- [E_Commerce_Backend_System] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-15T23:11:33.501+05:30  INFO 9924 --- [E_Commerce_Backend_System] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/inctureECommerceDatabase]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.34
+	Default catalog/schema: inctureECommerceDatabase/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-15T23:11:34.736+05:30  INFO 9924 --- [E_Commerce_Backend_System] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-15T23:11:34.878+05:30  INFO 9924 --- [E_Commerce_Backend_System] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-15T23:11:34.969+05:30  INFO 9924 --- [E_Commerce_Backend_System] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-03-15T23:11:35.982+05:30  INFO 9924 --- [E_Commerce_Backend_System] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-03-15T23:11:35.983+05:30  WARN 9924 --- [E_Commerce_Backend_System] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-03-15T23:11:36.046+05:30  WARN 9924 --- [E_Commerce_Backend_System] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-15T23:11:36.707+05:30  INFO 9924 --- [E_Commerce_Backend_System] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-03-15T23:11:36.714+05:30  INFO 9924 --- [E_Commerce_Backend_System] [main] c.i.E.ECommerceBackendSystemApplication  : Started ECommerceBackendSystemApplication in 6.311 seconds (process running for 6.99)
+2026-03-15T23:11:47.039+05:30  INFO 9924 --- [E_Commerce_Backend_System] [http-nio-8080-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-15T23:11:47.041+05:30  INFO 9924 --- [E_Commerce_Backend_System] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-15T23:11:47.046+05:30  INFO 9924 --- [E_Commerce_Backend_System] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2026-03-15T23:11:47.307+05:30 ERROR 9924 --- [E_Commerce_Backend_System] [http-nio-8080-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+
+io.jsonwebtoken.ExpiredJwtException: JWT expired 147305 milliseconds ago at 2026-03-15T17:39:20.000Z. Current time: 2026-03-15T17:41:47.305Z. Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:691) ~[jjwt-impl-0.12.6.jar:0.12.6]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:364) ~[jjwt-impl-0.12.6.jar:0.12.6]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:94) ~[jjwt-impl-0.12.6.jar:0.12.6]
+	at io.jsonwebtoken.impl.io.AbstractParser.parse(AbstractParser.java:36) ~[jjwt-impl-0.12.6.jar:0.12.6]
+	at io.jsonwebtoken.impl.io.AbstractParser.parse(AbstractParser.java:29) ~[jjwt-impl-0.12.6.jar:0.12.6]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseSignedClaims(DefaultJwtParser.java:830) ~[jjwt-impl-0.12.6.jar:0.12.6]
+	at com.incture.E_Commerce_Backend_System.utils.JWTUtils.extractAllClaims(JWTUtils.java:65) ~[classes/:na]
+	at com.incture.E_Commerce_Backend_System.utils.JWTUtils.extractClaim(JWTUtils.java:59) ~[classes/:na]
+	at com.incture.E_Commerce_Backend_System.utils.JWTUtils.extractUsername(JWTUtils.java:54) ~[classes/:na]
+	at com.incture.E_Commerce_Backend_System.filter.JWTFilter.doFilterInternal(JWTFilter.java:46) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317) ~[spring-security-config-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2026-03-15T23:11:56.570+05:30  INFO 9924 --- [E_Commerce_Backend_System] [http-nio-8080-exec-3] c.i.E.controller.UserController          : Received login request for user: Rajesh
+2026-03-15T23:11:56.633+05:30 DEBUG 9924 --- [E_Commerce_Backend_System] [http-nio-8080-exec-3] c.i.E.service.UserService                : Attempting to authenticate credentials for user: 'Rajesh'
+2026-03-15T23:11:57.221+05:30 DEBUG 9924 --- [E_Commerce_Backend_System] [http-nio-8080-exec-3] c.i.E.service.DemoUserService            : Attempting to load user details for username: 'Rajesh'
+2026-03-15T23:11:57.431+05:30 DEBUG 9924 --- [E_Commerce_Backend_System] [http-nio-8080-exec-3] c.i.E.service.DemoUserService            : Successfully loaded user details for username: 'Rajesh'
+2026-03-15T23:11:58.066+05:30 DEBUG 9924 --- [E_Commerce_Backend_System] [http-nio-8080-exec-3] c.i.E.service.UserService                : Authentication successful for user: 'Rajesh'. Generating JWT...
+2026-03-15T23:11:58.151+05:30  INFO 9924 --- [E_Commerce_Backend_System] [http-nio-8080-exec-3] c.i.E.controller.UserController          : User 'Rajesh' logged in successfully.
+2026-03-15T23:12:17.933+05:30 DEBUG 9924 --- [E_Commerce_Backend_System] [http-nio-8080-exec-2] c.i.E.service.DemoUserService            : Attempting to load user details for username: 'Rajesh'
+2026-03-15T23:12:17.941+05:30 DEBUG 9924 --- [E_Commerce_Backend_System] [http-nio-8080-exec-2] c.i.E.service.DemoUserService            : Successfully loaded user details for username: 'Rajesh'
+2026-03-15T23:12:17.962+05:30  INFO 9924 --- [E_Commerce_Backend_System] [http-nio-8080-exec-2] c.i.E.controller.ProductController       : Admin request received to update product with ID: 18
+2026-03-15T23:12:17.964+05:30 DEBUG 9924 --- [E_Commerce_Backend_System] [http-nio-8080-exec-2] c.i.E.service.ProductService             : Attempting to update details for product ID: 18
+2026-03-15T23:12:38.402+05:30  INFO 9924 --- [E_Commerce_Backend_System] [RMI TCP Connection(3)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2026-03-15T23:12:38.406+05:30  INFO 9924 --- [E_Commerce_Backend_System] [RMI TCP Connection(3)-127.0.0.1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-15T23:12:38.414+05:30  INFO 9924 --- [E_Commerce_Backend_System] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-15T23:12:38.419+05:30  INFO 9924 --- [E_Commerce_Backend_System] [RMI TCP Connection(3)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-15T23:12:38.422+05:30  INFO 9924 --- [E_Commerce_Backend_System] [RMI TCP Connection(3)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : ECommerceBackendSystemApplication - Shutdown initiated...
+2026-03-15T23:12:38.430+05:30  INFO 9924 --- [E_Commerce_Backend_System] [RMI TCP Connection(3)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : ECommerceBackendSystemApplication - Shutdown completed.
+2026-03-15T23:13:43.102+05:30  INFO 13480 --- [E_Commerce_Backend_System] [main] c.i.E.ECommerceBackendSystemApplication  : Starting ECommerceBackendSystemApplication using Java 21.0.9 with PID 13480 (D:\JAVA-PROGRAMMING\ProductionJava\E_Commerce_Backend_System\target\classes started by rkjra in D:\JAVA-PROGRAMMING\ProductionJava\E_Commerce_Backend_System)
+2026-03-15T23:13:43.106+05:30  INFO 13480 --- [E_Commerce_Backend_System] [main] c.i.E.ECommerceBackendSystemApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-03-15T23:13:43.977+05:30  INFO 13480 --- [E_Commerce_Backend_System] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-15T23:13:44.055+05:30  INFO 13480 --- [E_Commerce_Backend_System] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63 ms. Found 6 JPA repository interfaces.
+2026-03-15T23:13:44.732+05:30  INFO 13480 --- [E_Commerce_Backend_System] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-03-15T23:13:44.748+05:30  INFO 13480 --- [E_Commerce_Backend_System] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-15T23:13:44.748+05:30  INFO 13480 --- [E_Commerce_Backend_System] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-15T23:13:44.804+05:30  INFO 13480 --- [E_Commerce_Backend_System] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1632 ms
+2026-03-15T23:13:44.991+05:30  INFO 13480 --- [E_Commerce_Backend_System] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-15T23:13:45.068+05:30  INFO 13480 --- [E_Commerce_Backend_System] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-03-15T23:13:45.669+05:30  INFO 13480 --- [E_Commerce_Backend_System] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-15T23:13:45.723+05:30  INFO 13480 --- [E_Commerce_Backend_System] [main] com.zaxxer.hikari.HikariDataSource       : ECommerceBackendSystemApplication - Starting...
+2026-03-15T23:13:46.134+05:30  INFO 13480 --- [E_Commerce_Backend_System] [main] com.zaxxer.hikari.pool.HikariPool        : ECommerceBackendSystemApplication - Added connection com.mysql.cj.jdbc.ConnectionImpl@5059d398
+2026-03-15T23:13:46.136+05:30  INFO 13480 --- [E_Commerce_Backend_System] [main] com.zaxxer.hikari.HikariDataSource       : ECommerceBackendSystemApplication - Start completed.
+2026-03-15T23:13:46.210+05:30  WARN 13480 --- [E_Commerce_Backend_System] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-15T23:13:46.234+05:30  INFO 13480 --- [E_Commerce_Backend_System] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/inctureECommerceDatabase]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.34
+	Default catalog/schema: inctureECommerceDatabase/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-15T23:13:47.589+05:30  INFO 13480 --- [E_Commerce_Backend_System] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-15T23:13:47.695+05:30  INFO 13480 --- [E_Commerce_Backend_System] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-15T23:13:47.796+05:30  INFO 13480 --- [E_Commerce_Backend_System] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-03-15T23:13:48.909+05:30  INFO 13480 --- [E_Commerce_Backend_System] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-03-15T23:13:48.909+05:30  WARN 13480 --- [E_Commerce_Backend_System] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-03-15T23:13:48.995+05:30  WARN 13480 --- [E_Commerce_Backend_System] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-15T23:13:49.672+05:30  INFO 13480 --- [E_Commerce_Backend_System] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-03-15T23:13:49.679+05:30  INFO 13480 --- [E_Commerce_Backend_System] [main] c.i.E.ECommerceBackendSystemApplication  : Started ECommerceBackendSystemApplication in 7.075 seconds (process running for 7.903)
+2026-03-15T23:13:55.078+05:30  INFO 13480 --- [E_Commerce_Backend_System] [http-nio-8080-exec-6] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-15T23:13:55.080+05:30  INFO 13480 --- [E_Commerce_Backend_System] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-15T23:13:55.085+05:30  INFO 13480 --- [E_Commerce_Backend_System] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2026-03-15T23:13:55.397+05:30 DEBUG 13480 --- [E_Commerce_Backend_System] [http-nio-8080-exec-6] c.i.E.service.DemoUserService            : Attempting to load user details for username: 'Rajesh'
+2026-03-15T23:13:55.641+05:30 DEBUG 13480 --- [E_Commerce_Backend_System] [http-nio-8080-exec-6] c.i.E.service.DemoUserService            : Successfully loaded user details for username: 'Rajesh'
+2026-03-15T23:13:55.953+05:30  INFO 13480 --- [E_Commerce_Backend_System] [http-nio-8080-exec-6] c.i.E.controller.ProductController       : Admin request received to update product with ID: 18
+2026-03-15T23:13:55.955+05:30 DEBUG 13480 --- [E_Commerce_Backend_System] [http-nio-8080-exec-6] c.i.E.service.ProductService             : Attempting to update details for product ID: 18
+2026-03-15T23:14:33.697+05:30  INFO 13480 --- [E_Commerce_Backend_System] [RMI TCP Connection(4)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2026-03-15T23:14:33.702+05:30  INFO 13480 --- [E_Commerce_Backend_System] [RMI TCP Connection(4)-127.0.0.1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-15T23:14:33.711+05:30  INFO 13480 --- [E_Commerce_Backend_System] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-15T23:14:33.717+05:30  INFO 13480 --- [E_Commerce_Backend_System] [RMI TCP Connection(4)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-15T23:14:33.719+05:30  INFO 13480 --- [E_Commerce_Backend_System] [RMI TCP Connection(4)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : ECommerceBackendSystemApplication - Shutdown initiated...
+2026-03-15T23:14:33.727+05:30  INFO 13480 --- [E_Commerce_Backend_System] [RMI TCP Connection(4)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : ECommerceBackendSystemApplication - Shutdown completed.
+2026-03-15T23:14:35.871+05:30  INFO 5056 --- [E_Commerce_Backend_System] [main] c.i.E.ECommerceBackendSystemApplication  : Starting ECommerceBackendSystemApplication using Java 21.0.9 with PID 5056 (D:\JAVA-PROGRAMMING\ProductionJava\E_Commerce_Backend_System\target\classes started by rkjra in D:\JAVA-PROGRAMMING\ProductionJava\E_Commerce_Backend_System)
+2026-03-15T23:14:35.874+05:30  INFO 5056 --- [E_Commerce_Backend_System] [main] c.i.E.ECommerceBackendSystemApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-03-15T23:14:36.507+05:30  INFO 5056 --- [E_Commerce_Backend_System] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-15T23:14:36.574+05:30  INFO 5056 --- [E_Commerce_Backend_System] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 6 JPA repository interfaces.
+2026-03-15T23:14:37.074+05:30  INFO 5056 --- [E_Commerce_Backend_System] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-03-15T23:14:37.088+05:30  INFO 5056 --- [E_Commerce_Backend_System] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-15T23:14:37.089+05:30  INFO 5056 --- [E_Commerce_Backend_System] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-15T23:14:37.134+05:30  INFO 5056 --- [E_Commerce_Backend_System] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1209 ms
+2026-03-15T23:14:37.258+05:30  INFO 5056 --- [E_Commerce_Backend_System] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-15T23:14:37.298+05:30  INFO 5056 --- [E_Commerce_Backend_System] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-03-15T23:14:37.686+05:30  INFO 5056 --- [E_Commerce_Backend_System] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-15T23:14:37.714+05:30  INFO 5056 --- [E_Commerce_Backend_System] [main] com.zaxxer.hikari.HikariDataSource       : ECommerceBackendSystemApplication - Starting...
+2026-03-15T23:14:38.037+05:30  INFO 5056 --- [E_Commerce_Backend_System] [main] com.zaxxer.hikari.pool.HikariPool        : ECommerceBackendSystemApplication - Added connection com.mysql.cj.jdbc.ConnectionImpl@6e66b498
+2026-03-15T23:14:38.039+05:30  INFO 5056 --- [E_Commerce_Backend_System] [main] com.zaxxer.hikari.HikariDataSource       : ECommerceBackendSystemApplication - Start completed.
+2026-03-15T23:14:38.090+05:30  WARN 5056 --- [E_Commerce_Backend_System] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-15T23:14:38.104+05:30  INFO 5056 --- [E_Commerce_Backend_System] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/inctureECommerceDatabase]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.34
+	Default catalog/schema: inctureECommerceDatabase/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-15T23:14:39.070+05:30  INFO 5056 --- [E_Commerce_Backend_System] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-15T23:14:39.161+05:30  INFO 5056 --- [E_Commerce_Backend_System] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-15T23:14:39.231+05:30  INFO 5056 --- [E_Commerce_Backend_System] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-03-15T23:14:40.137+05:30  INFO 5056 --- [E_Commerce_Backend_System] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-03-15T23:14:40.138+05:30  WARN 5056 --- [E_Commerce_Backend_System] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-03-15T23:14:40.199+05:30  WARN 5056 --- [E_Commerce_Backend_System] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-15T23:14:40.823+05:30  INFO 5056 --- [E_Commerce_Backend_System] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-03-15T23:14:40.829+05:30  INFO 5056 --- [E_Commerce_Backend_System] [main] c.i.E.ECommerceBackendSystemApplication  : Started ECommerceBackendSystemApplication in 5.397 seconds (process running for 6.114)
+2026-03-15T23:14:45.917+05:30  INFO 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-15T23:14:45.919+05:30  INFO 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-15T23:14:45.922+05:30  INFO 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-03-15T23:14:46.185+05:30 DEBUG 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-2] c.i.E.service.DemoUserService            : Attempting to load user details for username: 'Rajesh'
+2026-03-15T23:14:46.431+05:30 DEBUG 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-2] c.i.E.service.DemoUserService            : Successfully loaded user details for username: 'Rajesh'
+2026-03-15T23:14:46.742+05:30  INFO 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-2] c.i.E.controller.ProductController       : Admin request received to update product with ID: 18
+2026-03-15T23:14:46.745+05:30 DEBUG 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-2] c.i.E.service.ProductService             : Attempting to update details for product ID: 18
+2026-03-15T23:14:46.857+05:30 DEBUG 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-2] c.i.E.service.ProductService             : Successfully updated details for product ID: 18
+2026-03-15T23:14:46.859+05:30  INFO 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-2] c.i.E.controller.ProductController       : Product with ID 18 updated successfully.
+2026-03-15T23:15:29.503+05:30 DEBUG 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-5] c.i.E.service.DemoUserService            : Attempting to load user details for username: 'Rajesh'
+2026-03-15T23:15:29.510+05:30 DEBUG 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-5] c.i.E.service.DemoUserService            : Successfully loaded user details for username: 'Rajesh'
+2026-03-15T23:15:29.533+05:30  INFO 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-5] c.i.E.controller.ProductController       : Admin request received to update product with ID: 16
+2026-03-15T23:15:29.534+05:30 DEBUG 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-5] c.i.E.service.ProductService             : Attempting to update details for product ID: 16
+2026-03-15T23:15:29.555+05:30 DEBUG 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-5] c.i.E.service.ProductService             : Successfully updated details for product ID: 16
+2026-03-15T23:15:29.556+05:30  INFO 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-5] c.i.E.controller.ProductController       : Product with ID 16 updated successfully.
+2026-03-15T23:15:48.930+05:30 DEBUG 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-4] c.i.E.service.DemoUserService            : Attempting to load user details for username: 'Rajesh'
+2026-03-15T23:15:48.938+05:30 DEBUG 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-4] c.i.E.service.DemoUserService            : Successfully loaded user details for username: 'Rajesh'
+2026-03-15T23:15:48.969+05:30  INFO 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-4] c.i.E.controller.ProductController       : Received request to fetch all products. Page: 0, Size: 5, SortBy: price
+2026-03-15T23:15:48.971+05:30 DEBUG 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-4] c.i.E.service.ProductService             : Fetching all products from the database with pagination.
+2026-03-15T23:15:49.037+05:30 DEBUG 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-4] c.i.E.service.ProductService             : Successfully fetched 5 products.
+2026-03-15T23:15:49.037+05:30  INFO 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-4] c.i.E.controller.ProductController       : Successfully fetched 5 products (Page 0).
+2026-03-15T23:15:49.088+05:30  WARN 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-4] ration$PageModule$WarningLoggingModifier : Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2026-03-15T23:16:15.708+05:30 DEBUG 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-3] c.i.E.service.DemoUserService            : Attempting to load user details for username: 'Rajesh'
+2026-03-15T23:16:15.716+05:30 DEBUG 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-3] c.i.E.service.DemoUserService            : Successfully loaded user details for username: 'Rajesh'
+2026-03-15T23:16:15.732+05:30  INFO 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-3] c.i.E.controller.ProductController       : Admin request received to add a new product.
+2026-03-15T23:16:15.733+05:30 DEBUG 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-3] c.i.E.service.ProductService             : Attempting to save a new product to the database.
+2026-03-15T23:16:15.744+05:30  WARN 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-3] c.i.E.service.ProductService             : Add product failed: Product name 'Classic Oxford Analog' already exists.
+2026-03-15T23:16:22.163+05:30 DEBUG 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-6] c.i.E.service.DemoUserService            : Attempting to load user details for username: 'Rajesh'
+2026-03-15T23:16:22.170+05:30 DEBUG 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-6] c.i.E.service.DemoUserService            : Successfully loaded user details for username: 'Rajesh'
+2026-03-15T23:16:22.192+05:30  INFO 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-6] c.i.E.controller.ProductController       : Admin request received to add a new product.
+2026-03-15T23:16:22.192+05:30 DEBUG 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-6] c.i.E.service.ProductService             : Attempting to save a new product to the database.
+2026-03-15T23:16:22.312+05:30 DEBUG 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-6] c.i.E.service.ProductService             : Successfully saved new product with ID: 52
+2026-03-15T23:16:22.313+05:30  INFO 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-6] c.i.E.controller.ProductController       : Product added successfully with new ID: 52
+2026-03-15T23:16:57.789+05:30 DEBUG 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-7] c.i.E.service.DemoUserService            : Attempting to load user details for username: 'Rajesh'
+2026-03-15T23:16:57.799+05:30 DEBUG 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-7] c.i.E.service.DemoUserService            : Successfully loaded user details for username: 'Rajesh'
+2026-03-15T23:16:57.819+05:30  INFO 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-7] c.i.E.controller.ProductController       : Admin request received to delete product with ID: 52
+2026-03-15T23:16:57.820+05:30 DEBUG 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-7] c.i.E.service.ProductService             : Attempting to delete product with ID: 52
+2026-03-15T23:16:57.861+05:30 DEBUG 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-7] c.i.E.service.ProductService             : Successfully deleted product with ID: 52
+2026-03-15T23:16:57.862+05:30  INFO 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-7] c.i.E.controller.ProductController       : Product with ID 52 deleted successfully.
+2026-03-15T23:17:41.627+05:30 DEBUG 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-8] c.i.E.service.DemoUserService            : Attempting to load user details for username: 'Rajesh'
+2026-03-15T23:17:41.635+05:30 DEBUG 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-8] c.i.E.service.DemoUserService            : Successfully loaded user details for username: 'Rajesh'
+2026-03-15T23:18:05.740+05:30 DEBUG 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-9] c.i.E.service.DemoUserService            : Attempting to load user details for username: 'Rajesh'
+2026-03-15T23:18:05.745+05:30 DEBUG 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-9] c.i.E.service.DemoUserService            : Successfully loaded user details for username: 'Rajesh'
+2026-03-15T23:18:26.428+05:30 DEBUG 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-10] c.i.E.service.DemoUserService            : Attempting to load user details for username: 'Rajesh'
+2026-03-15T23:18:26.435+05:30 DEBUG 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-10] c.i.E.service.DemoUserService            : Successfully loaded user details for username: 'Rajesh'
+2026-03-15T23:19:13.451+05:30 DEBUG 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-1] c.i.E.service.DemoUserService            : Attempting to load user details for username: 'Rajesh'
+2026-03-15T23:19:13.461+05:30 DEBUG 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-1] c.i.E.service.DemoUserService            : Successfully loaded user details for username: 'Rajesh'
+2026-03-15T23:19:13.474+05:30  INFO 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-1] c.i.E.controller.OrderController         : Admin request received to update order ID: 452 to new status: 'SHIPPED'
+2026-03-15T23:19:13.476+05:30 DEBUG 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-1] c.i.E.service.OrderService               : Attempting to update status of order ID: 452 to 'SHIPPED'
+2026-03-15T23:19:13.485+05:30  WARN 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-1] c.i.E.service.OrderService               : Invalid transition: Cannot ship order ID 452. Current status is 'FAILED'
+2026-03-15T23:19:13.488+05:30 ERROR 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-1] c.i.E.controller.OrderController         : Status update failed for order ID: 452. Invalid transition or order not found.
+2026-03-15T23:19:38.995+05:30 DEBUG 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-2] c.i.E.service.DemoUserService            : Attempting to load user details for username: 'Rajesh'
+2026-03-15T23:19:39.002+05:30 DEBUG 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-2] c.i.E.service.DemoUserService            : Successfully loaded user details for username: 'Rajesh'
+2026-03-15T23:19:39.014+05:30  INFO 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-2] c.i.E.controller.OrderController         : Admin request received to update order ID: 453 to new status: 'DELIVERED'
+2026-03-15T23:19:39.015+05:30 DEBUG 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-2] c.i.E.service.OrderService               : Attempting to update status of order ID: 453 to 'DELIVERED'
+2026-03-15T23:19:39.021+05:30  WARN 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-2] c.i.E.service.OrderService               : Invalid transition: Cannot mark order ID 453 as delivered. Current status is 'PLACED'
+2026-03-15T23:19:39.024+05:30 ERROR 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-2] c.i.E.controller.OrderController         : Status update failed for order ID: 453. Invalid transition or order not found.
+2026-03-15T23:19:44.355+05:30 DEBUG 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-3] c.i.E.service.DemoUserService            : Attempting to load user details for username: 'Rajesh'
+2026-03-15T23:19:44.363+05:30 DEBUG 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-3] c.i.E.service.DemoUserService            : Successfully loaded user details for username: 'Rajesh'
+2026-03-15T23:19:44.375+05:30  INFO 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-3] c.i.E.controller.OrderController         : Admin request received to update order ID: 453 to new status: 'SHIPPED'
+2026-03-15T23:19:44.376+05:30 DEBUG 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-3] c.i.E.service.OrderService               : Attempting to update status of order ID: 453 to 'SHIPPED'
+2026-03-15T23:19:44.381+05:30  INFO 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-3] c.i.E.service.OrderService               : Successfully updated order ID: 453 to status: 'SHIPPED'
+2026-03-15T23:19:44.409+05:30  INFO 5056 --- [E_Commerce_Backend_System] [http-nio-8080-exec-3] c.i.E.controller.OrderController         : Successfully updated order ID: 453 to status: 'SHIPPED'
+2026-03-15T23:20:12.292+05:30  INFO 5056 --- [E_Commerce_Backend_System] [RMI TCP Connection(9)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2026-03-15T23:20:12.297+05:30  INFO 5056 --- [E_Commerce_Backend_System] [RMI TCP Connection(9)-127.0.0.1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-15T23:20:12.306+05:30  INFO 5056 --- [E_Commerce_Backend_System] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-15T23:20:12.310+05:30  INFO 5056 --- [E_Commerce_Backend_System] [RMI TCP Connection(9)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-15T23:20:12.313+05:30  INFO 5056 --- [E_Commerce_Backend_System] [RMI TCP Connection(9)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : ECommerceBackendSystemApplication - Shutdown initiated...
+2026-03-15T23:20:12.320+05:30  INFO 5056 --- [E_Commerce_Backend_System] [RMI TCP Connection(9)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : ECommerceBackendSystemApplication - Shutdown completed.

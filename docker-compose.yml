@@ -1,0 +1,49 @@
+version: "3.8"
+
+services:
+    mysql:
+        image: mysql:8.0.34
+        container_name: ECommerceApplication-mysql
+        environment:
+            MYSQL_ROOT_PASSWORD: "#Rajesh123"
+            MYSQL_DATABASE: inctureECommerceDatabase
+        ports:
+            - "3307:3306"
+        volumes:
+            - mysql_data:/var/lib/mysql
+
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin
+        container_name: ECommerceApplication-phpmyadmin
+        environment:
+            PMA_HOST: mysql
+            PMA_PORT: 3306
+            MYSQL_ROOT_PASSWORD: "#Rajesh123"
+        ports:
+            - "8081:80"
+        depends_on:
+            - mysql	
+
+    springboot:
+        build: .
+        container_name: ECommerceApplication-backend
+        ports:
+            - "8082:8080"
+        environment:
+            TZ: "Asia/Kolkata"
+            SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/inctureECommerceDatabase?allowPublicKeyRetrieval=true&useSSL=false
+            SPRING_DATASOURCE_USERNAME: root
+            SPRING_DATASOURCE_PASSWORD: "#Rajesh123"
+            SPRING_JPA_HIBERNATE_DDL_AUTO: "update"
+            SPRING_JPA_SHOW_SQL: "true"
+            SPRING_MAIL_HOST: "smtp.gmail.com"
+            SPRING_MAIL_PORT: "587"
+            SPRING_MAIL_USERNAME: "rkjrajesh2004@gmail.com"
+            SPRING_MAIL_PASSWORD: "fcxkzudlftrdvbhe"
+            SPRING_MAIL_PROPERTIES_MAIL_SMTP_AUTH: "true"
+            SPRING_MAIL_PROPERTIES_MAIL_SMTP_STARTTLS_ENABLE: "true"
+        depends_on:
+            - mysql
+
+volumes:
+    mysql_data:
