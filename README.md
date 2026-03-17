@@ -787,7 +787,7 @@ mvn install
 
 **Current Coverage:**
 
-![Architecture](pictures/Screenshot%202026-03-17%20021908.png)
+![Architecture](Pictures/Screenshot%202026-03-17%20021908.png)
 
 <br>
 
